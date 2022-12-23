@@ -1,0 +1,15 @@
+<div class="entry__content" id="entry_modal">
+    <div class="entry__container">
+        @@include('./modal-figures.html')
+        <div class="container__text">
+            <h2>Записаться на прием</h2>
+            <p>Для того, чтобы записаться на консультацию, заполните форму обратной связи. Наш специалист свяжется с Вами в ближайшее время.</p>
+        </div>
+        <form action="../../sender.php" method="post" class="container__forms">
+            <input type="text" name="name" placeholder="Введите ваше имя*" required>
+            <input type="number" name="phone" placeholder="+8 (___) ___-__-__" data-slots="_">
+            <input type="text" name="message" placeholder="Введите ваше сообщение">
+            <button type="submit" name="submit">Отправить</button>
+        </form>
+    </div>
+</div>
