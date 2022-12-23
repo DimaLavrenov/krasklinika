@@ -1,0 +1,315 @@
+.contact__content{
+    background-color: $figure-gray;
+    .contact__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact_title{
+            margin: 68px 0px 117px 0px;
+            z-index: 10;
+            @media only screen and (max-width: 1370px) {
+                margin: 68px 0px 70px 0px;
+            }
+            @media only screen and (max-width: 1190px) {
+                margin: 68px 0px 0px 0px;
+            }
+            @media only screen and (max-width: 964px) {
+                margin: 51px 0px 0px 0px;
+            }
+            h1{
+                font-family: 'Vetrino';
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 54px;
+                @media only screen and (max-width: 1600px) {
+                    font-size: 46px;
+                }
+                @media only screen and (max-width: 1498px) {
+                    font-size: 43px;
+                }
+                @media only screen and (max-width: 1221px) {
+                    font-size: 38px;
+                }
+                @media only screen and (max-width: 1061px) {
+                    font-size: 33px;
+                }
+                @media only screen and (max-width: 837px) {
+                    line-height: 37px;
+                }
+                @media only screen and (max-width: 625px) {
+                    font-size: 30px;
+                }
+                @media only screen and (max-width: 573px) {
+                    font-size: 27px;
+                }
+                @media only screen and (max-width: 519px) {
+                    font-size: 25px;
+                }
+                @media only screen and (max-width: 457px) {
+                    font-size: 22px;
+                }
+                @media only screen and (max-width: 363px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .contact_option{
+            display: flex;
+            margin-bottom: 100px;
+            z-index: 100;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0px 204px;
+
+            @media only screen and (max-width: 1878px) {
+                padding: 0px 164px;
+            }
+            @media only screen and (max-width: 1798px) {
+                padding: 0px 84px;
+            }
+            @media only screen and (max-width: 1600px) {
+                padding: 0px 64px;
+            }
+            @media only screen and (max-width: 1498px) {
+                padding: 0px 44px;
+            }
+            @media only screen and (max-width: 1221px) {
+                padding: 75px 34px 0px 34px;
+            }
+            @media only screen and (max-width: 1130px) {
+                padding: 75px 20px 0px 20px;
+            }
+            @media only screen and (max-width: 1061px) {
+                padding: 60px 20px 0px 20px;
+            }
+            @media only screen and (max-width: 1024px) {
+                margin-bottom: 40px;
+            }
+            @media only screen and (max-width: 964px) {
+                flex-direction: column;
+                align-items: center;
+                padding: 60px 74px 0px 74px;
+                margin-bottom: 0px;
+            }
+            @media only screen and (max-width: 728px) {
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+            @media only screen and (max-width: 457px) {
+                padding: 30px 64px 0px 64px;
+            }
+            .adress{
+                @media only screen and (max-width: 964px) {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+                @media only screen and (max-width: 728px) {
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                }
+            }
+            .map{
+                width: 931px;
+                @media only screen and (max-width: 1388px) {
+                    width: 710px;
+                    height: 500px;
+                }
+                @media only screen and (max-width: 1090px) {
+                    width: 570px;
+                    height: 400px;
+                }
+                @media only screen and (max-width: 964px) {
+                    margin-bottom: 50px;
+                }
+                @media only screen and (max-width: 640px) {
+                    width: 500px;
+                    height: 360px;
+                }
+                @media only screen and (max-width: 530px) {
+                    width: 430px;
+                    height: 350px;
+                }
+                @media only screen and (max-width: 457px) {
+                    margin-bottom: 0px;
+                    width: 370px;
+                    height: 500px;
+                }
+                @media only screen and (max-width: 410px) {
+                    width: 320px;
+                    height: 460px;
+                }
+                @media only screen and (max-width: 355px) {
+                    width: 300px;
+                    height: 450px;
+                }
+            }
+
+            .schedule{
+                .schedule__title{
+                    margin-bottom: 10px;
+
+                    h2{
+                        font-family: 'Gilroy';
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 28px;
+                        @media only screen and (max-width: 457px) {
+                            font-size: 20px;
+                        }
+                        @media only screen and (max-width: 363px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .schedule__text p{
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    @media only screen and (max-width: 457px) {
+                        font-size: 16px;
+                    }
+                    @media only screen and (max-width: 363px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .connection{
+                margin-bottom: 92px;
+                @media only screen and (max-width: 964px) {
+                    margin-bottom: 50px;
+                }
+                @media only screen and (max-width: 457px) {
+                    margin-bottom: 30px;
+                }
+                .phone{
+                    margin-bottom: 20px;
+
+                    .phone__title{
+                        margin-bottom: 10px;
+
+                        h2{
+                            font-family: 'Gilroy';
+                            font-weight: 400;
+                            font-size: 24px;
+                            @media only screen and (max-width: 457px) {
+                                font-size: 20px;
+                            }
+                            @media only screen and (max-width: 363px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .phone__text{
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            font-family: 'Gilroy';
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 140%;
+                            text-decoration: none;
+                            color: #000;
+                            @media only screen and (max-width: 457px) {
+                                font-size: 16px;
+                            }
+                            @media only screen and (max-width: 363px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .email{
+                    margin-bottom: 20px;
+
+                    .email__title{
+                        margin-bottom: 10px;
+
+                        h2{
+                            font-family: 'Gilroy';
+                            font-weight: 400;
+                            font-size: 24px;
+                            @media only screen and (max-width: 457px) {
+                                font-size: 20px;
+                            }
+                            @media only screen and (max-width: 363px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .email__text a{
+                        font-family: 'Gilroy';
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 140%;
+                        text-decoration: none;
+                        color: #000;
+                        @media only screen and (max-width: 457px) {
+                            font-size: 16px;
+                        }
+                        @media only screen and (max-width: 363px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .street{
+                    .street__title{
+                        margin-bottom: 10px;
+
+                        h2{
+                            font-family: 'Gilroy';
+                            font-weight: 400;
+                            font-size: 24px;
+                            @media only screen and (max-width: 457px) {
+                                font-size: 20px;
+                            }
+                            @media only screen and (max-width: 363px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .street__text p{
+                        font-family: 'Gilroy';
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 140%;
+                        @media only screen and (max-width: 457px) {
+                            font-size: 16px;
+                        }
+                        @media only screen and (max-width: 363px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .map img{
+                width: 931px;
+                @media only screen and (max-width: 1370px) {
+                    width: 735px;
+                }
+                @media only screen and (max-width: 1190px) {
+                    width: 600px;
+                }
+                @media only screen and (max-width: 700px) {
+                    width: 450px;
+                }
+                @media only screen and (max-width: 600px) {
+                    width: 360px;
+                }
+                @media only screen and (max-width: 512px) {
+                    width: 340px;
+                }
+                @media only screen and (max-width: 363px) {
+                    width: 290px;
+                }
+            }
+        }
+    }
+}

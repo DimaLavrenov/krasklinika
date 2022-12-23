@@ -1,0 +1,614 @@
+.questions__content{
+    .questions__container{
+        .questions_list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 100px 0px 100px 0px;
+            @media only screen and (max-width: 1300px) {
+                margin-top: 60px;
+            }
+            @media only screen and (max-width: 1070px) {
+                margin-top: 40px;
+            }
+            a.link{
+                text-decoration: none;
+                color: #000;
+            }
+            a.link:not(:last-child){
+                margin-bottom: 50px;
+                @media only screen and (max-width: 988px) {
+                    margin-bottom: 40px;
+                }
+                @media only screen and (max-width: 600px) {
+                    margin-bottom: 30px;
+                }
+                @media only screen and (max-width: 420px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .question{
+                background-color: #fff;
+                width: 1250px;
+                cursor: pointer;
+                justify-content: flex-start;
+
+                // for anim
+                height: 100px;
+                overflow: hidden;
+                // for anim
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                z-index: 100;
+                position: relative;
+
+                @media only screen and (max-width: 1300px) {
+                    width: 1010px;
+                }
+                @media only screen and (max-width: 1070px) {
+                    width: 960px;
+                }
+                @media only screen and (max-width: 988px) {
+                    width: 770px;
+                    height: 90px;
+                    padding: 0px 30px;
+                }
+                @media only screen and (max-width: 800px) {
+                    width: 640px;
+                }
+                @media only screen and (max-width: 700px) {
+                    width: 560px;
+                }
+                @media only screen and (max-width: 600px) {
+                    width: 470px;
+                    padding: 0 20px;
+                    height: 80px;
+                }
+                @media only screen and (max-width: 500px) {
+                    width: 410px;
+                    height: 70px;             
+                }
+                @media only screen and (max-width: 420px) {
+                    width: 380px;
+                    padding: 0 10px;
+                    height: 80px; 
+                }
+                @media only screen and (max-width: 386px) {
+                    width: 340px;
+                }
+                @media only screen and (max-width: 363px) {
+                    width: 300px;
+                }
+                .question__body{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 24px 0px;
+                    height: auto;
+                    @media only screen and (max-width: 988px) {
+                        padding: 18px 0px;
+                    }
+                    @media only screen and (max-width: 600px) {
+                        padding: 13px 0px;
+                    }
+                    @media only screen and (max-width: 500px) {
+                        padding: 8px 0px;
+                    }
+                    @media only screen and (max-width: 420px) {
+                        padding: 13px 0px;
+                    }
+                    .question__number{
+                        display: flex;
+                        flex-basis: 15%;
+                        justify-content: center;
+                        @media only screen and (max-width: 1070px) {
+                            margin-right: 45px;
+                        }
+                        @media only screen and (max-width: 700px) {
+                            margin-right: 20px;
+                        }
+                        @media only screen and (max-width: 600px) {
+                            margin-right: 15px;
+                        }
+                        h1{
+                            font-family: 'Vetrino';
+                            font-weight: 400;
+                            font-size: 50px;
+                            line-height: 54px;
+                            @media only screen and (max-width: 1600px) {
+                                font-size: 46px;
+                            }
+                            @media only screen and (max-width: 1498px) {
+                                font-size: 43px;
+                            }
+                            @media only screen and (max-width: 1221px) {
+                                font-size: 38px;
+                            }
+                            @media only screen and (max-width: 1061px) {
+                                font-size: 33px;
+                            }
+                            @media only screen and (max-width: 625px) {
+                                font-size: 30px;
+                            }
+                            @media only screen and (max-width: 573px) {
+                                font-size: 27px;
+                            }
+                            @media only screen and (max-width: 519px) {
+                                font-size: 25px;
+                            }
+                            @media only screen and (max-width: 363px) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .question__text{
+                        flex-basis: 75%;
+                        @media only screen and (max-width: 988px) {
+                            width: 470px;
+                        }
+                        @media only screen and (max-width: 800px) {
+                            width: 430px;
+                        }
+                        @media only screen and (max-width: 700px) {
+                            width: 360px;
+                        }
+                        @media only screen and (max-width: 600px) {
+                            width: 310px;
+                        }
+                        @media only screen and (max-width: 500px) {
+                            width: 270px;
+                        }
+                        @media only screen and (max-width: 420px) {
+                            width: 250px;
+                        }
+                        @media only screen and (max-width: 386px) {
+                            width: 210px;
+                        }
+                        @media only screen and (max-width: 363px) {
+                            width: 190px;
+                        }
+                        p{
+                            font-family: 'Gilroy';
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 28px;
+                            @media only screen and (max-width: 1070px) {
+                                font-size: 22px;
+                            }
+                            @media only screen and (max-width: 988px) {
+                                font-size: 20px;
+                            }
+                            @media only screen and (max-width: 600px) {
+                                font-size: 17px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                    .question__expand{
+                        display: flex;
+                        flex-basis: 10%;
+                        justify-content: center;
+                        @media only screen and (max-width: 1070px) {
+                            width: 40px;
+                        }
+                        @media only screen and (max-width: 988px) {
+                            width: 35px;
+                        }
+                        @media only screen and (max-width: 700px) {
+                            width: 30px;
+                        }
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                    .question__collapse{
+                        flex-basis: 10%;
+                        justify-content: center;
+                        display: none;
+                        @media only screen and (max-width: 1070px) {
+                            width: 40px;
+                        }
+                        @media only screen and (max-width: 988px) {
+                            width: 35px;
+                        }
+                        @media only screen and (max-width: 700px) {
+                            width: 30px;
+                        }
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .question__secondary{
+                    width: 100%;
+                    display: none;
+                    padding: 0px 60px;
+                    .question__line{
+                        background-color: #000;
+                        height: 1px;
+                        width: 850px;
+                        margin-bottom: 40px;
+                        @media only screen and (max-width: 1070px) {
+                            width: 80%;
+                        }
+                    }
+                    .question__clarification{
+                        margin: 40px 0px 69px 0px;
+                        @media only screen and (max-width: 988px) {
+                            margin: 40px 0px 30px 0px;
+                        }
+                        @media only screen and (max-width: 420px) {
+                            margin-bottom: 10px;
+                        }
+                        .price__item{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            border-bottom: 1px solid black;
+
+                            p{
+                                font-size: 18px;
+                                font-family: 'Gilroy';
+                                @media only screen and (max-width: 420px) {
+                                    font-size: 15px;
+                                }
+                            }
+                            .left{
+                                text-align: left;
+                                flex-basis: 70%;
+                                @media only screen and (max-width: 988px) {
+                                    flex-basis: 60%;
+                                }
+                            }
+                            .right{
+                                flex-basis: 30%;
+                                text-align: right;
+                                @media only screen and (max-width: 988px) {
+                                    flex-basis: 30%;
+                                    text-align: right;
+                                }
+                                @media only screen and (max-width: 700px) {
+                                    flex-basis: 40%;
+                                }
+                            }
+                        }
+                        .price__item.mt40{
+                            margin-top: 40px;
+                        }
+                        .price__item:not(:last-child){
+                            margin-bottom: 14px;
+                        }
+
+                        .total_price{
+                            display: flex;
+                            justify-content: flex-end;
+                            p{
+                                font-size: 18px;
+                                font-family: 'Gilroy';
+                            }
+                        }
+
+                        .insemination, .smear{
+                            width: 100%;
+                            padding-left: 80px;
+                            @media only screen and (max-width: 988px) {
+                                padding-left: 50px;
+                            }
+                            @media only screen and (max-width: 788px) {
+                                padding-left: 20px;
+                            }
+                            @media only screen and (max-width: 363px) {
+                                padding-left: 10px;
+                            }
+                            .item{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-end;
+                                border-bottom: 1px solid black;
+                                margin-bottom: 14px;
+                                p{
+                                    font-size: 18px;
+                                    font-family: 'Gilroy';
+                                    @media only screen and (max-width: 386px) {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        .smear{
+                            .item{
+                                .main{
+                                    @media only screen and (max-width: 988px) {
+                                        width: 557px;
+                                    }
+                                    @media only screen and (max-width: 788px) {
+                                        width: 430px;
+                                    }
+                                    @media only screen and (max-width: 700px) {
+                                        width: 370px;
+                                    }
+                                    @media only screen and (max-width: 600px) {
+                                        width: 320px;
+                                    }
+                                    @media only screen and (max-width: 500px) {
+                                        width: 250px;
+                                    }
+                                    @media only screen and (max-width: 386px) {
+                                        width: 210px;
+                                    }
+                                    @media only screen and (max-width: 363px) {
+                                        width: 190px;
+                                    }
+                                }
+                                p{
+                                    @media only screen and (max-width: 386px) {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        .blood, .infections, .diagnostics{
+                            p{
+                                font-size: 18px;
+                                font-family: 'Gilroy';
+                                margin-bottom: 14px;
+                                @media only screen and (max-width: 386px) {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        .blood_services, .infections_services, .diagnostics_services{
+                            width: 100%;
+                            padding-left: 20px;
+                            .item{
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 14px;
+                                border-bottom: 1px solid black;
+                                p{
+                                    font-size: 18px;
+                                    font-family: 'Gilroy'; 
+                                }
+                            }
+                        }
+
+                        .title{
+                            p{
+                                font-family: 'Gilroy';
+                                font-weight: 900;
+                                font-size: 19px;
+                                line-height: 140%;
+                                margin: 40px 0px 14px 0px;
+
+                                @media only screen and (max-width: 988px) {
+                                    margin-top: 20px;
+                                }
+                                @media only screen and (max-width: 700px) {
+                                    font-size: 18px;
+                                }
+                                span{
+                                    font-size: 24px;
+                                    font-family: 'Gilroy';
+                                    @media only screen and (max-width: 800px) {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .title.margin_left{
+                            margin-left: 40px;
+                        }
+                        .rules_for_patient{
+                            margin-left: 40px;
+                            p{
+                                font-family: 'Gilroy';
+                                font-size: 18px;
+                            }
+                        }
+                        .title a{
+                            font-family: 'Gilroy';
+                            font-weight: 500;
+                            font-size: 19px;
+                            color: red;
+                        }
+                        ul{
+                            margin-left: 40px;
+                            margin-top: 5px;
+                            @media only screen and (max-width: 600px) {
+                                margin-left: 20px;
+                            }
+                            li{
+                                font-family: 'Gilroy';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 140%;
+                            }
+                        }
+                        ul.deseable_list_style{
+                            list-style-type: none;
+                            @media only screen and (max-width: 988px) {
+                                margin-left: 20px;
+                            }
+                            @media only screen and (max-width: 600px) {
+                                margin-left: 0px;
+                            }
+                            li{
+                                list-style-type: none;
+                            }
+                        }
+                        .sertificates{
+                            display: flex;
+                            margin-top: 44px;
+                            @media only screen and (max-width: 1300px) {
+                                justify-content: center;
+                            }
+                            .item{
+                                width: 299px;
+                                height: 425px;
+                                @media only screen and (max-width: 1300px) {
+                                    height: auto;
+                                    width: 220px;
+                                }
+                                img{
+                                    width: 299px;
+                                    height: 425px;
+                                    @media only screen and (max-width: 1300px) {
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                            .item:not(:last-child){
+                                margin-right: 100px;
+                                @media only screen and (max-width: 1300px) {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        .info__text{
+                            h1{
+                                font-size: 24px;
+                                font-family: 'Gilroy';
+                                font-weight: 400;
+                                @media only screen and (max-width: 988px) {
+                                    font-size: 20px;
+                                }
+                            }
+                            p{
+                                font-size: 18px;
+                                font-family: 'Gilroy';
+                                @media only screen and (max-width: 988px) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .info__text:not(:first-child){
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .question__bottom{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+                    .question__button{
+                        width: 350px;
+                        height: 50px;
+                        background-color: $primary-color;
+                        border-radius: 3px;
+                        border: none;
+                        cursor: pointer;
+                        font-family: 'Gilroy';
+                        font-size: 18px;
+                        @media only screen and (max-width: 800px) {
+                            width: 250px;
+                            height: 40px;
+                            font-size: 15px;
+                        }
+                    }
+                    .question__price{
+                        font-family: 'Gilroy';
+                        font-size: 18px;
+                    }
+                }
+            }
+            .question.active{
+                height: auto;
+                .question__collapse{
+                    display: flex;
+                }
+                .question__expand{
+                    display: none;
+                }
+            }
+        }
+        .price__container{
+            width: 60vw;
+            font-family: 'Gilroy';
+            padding: 40px 0px;
+
+            @media only screen and (max-width: 1090px){
+                width: 70vw;
+            }
+            @media only screen and (max-width: 822px){
+                width: 85vw;
+            }
+            @media only screen and (max-width: $breakpoint-mobile-l){
+                width: auto;
+            }
+
+            .title{
+                font-size: 20px;
+                margin: 0px 0px 12px 0px;
+                font-weight: 900;
+
+                @media only screen and (max-width: 519px){
+                    font-size: 18px;
+                }
+            }
+            .title:not(:first-child){
+                margin-top: 40px;
+            }
+            .title.mt-0{
+                margin-top: 0px;
+            }
+            .title.mb-0{
+                margin-bottom: 0px;
+            }
+
+            .additional{
+                font-size: 20px;
+            }
+
+            .total_price{
+                text-align: right;
+                font-size: 18px;
+            }
+
+            .insemination{
+                padding-left: 50px;
+                margin-bottom: 14px;
+                .item{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #000;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 6px;
+                }
+            }
+
+            .price__item{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #000;
+                font-size: 18px;
+                font-weight: 400;
+                align-items: flex-end;
+
+                @media only screen and (max-width: 519px){
+                    font-size: 16px;
+                }
+                .left{
+                    text-align: left;
+                    flex-basis: 60%;
+                }
+                .right{
+                    flex-basis: 40%;
+                    text-align: right;
+                }
+            }
+            .price__item.mt40{
+                margin-top: 40px;
+            }
+            .price__item:not(:last-child){
+                margin-bottom: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,303 @@
+.licenses__content{
+    .licenses__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .licenses{
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: 970px) {
+                margin-top: 50px;
+            }
+        }
+
+        .licenses_title{
+            margin: 59px 0px 50px 0px;
+            @media only screen and (max-width: 970px) {
+                margin-bottom: 35px;
+            }
+
+            h1{
+                font-family: 'Vetrino';
+                font-weight: 400;
+                font-size: 50px;
+                @media only screen and (max-width: 1600px) {
+                    font-size: 46px;
+                }
+                @media only screen and (max-width: 1498px) {
+                    font-size: 43px;
+                }
+                @media only screen and (max-width: 1221px) {
+                    font-size: 38px;
+                }
+                @media only screen and (max-width: 1061px) {
+                    font-size: 33px;
+                }
+                @media only screen and (max-width: 625px) {
+                    font-size: 30px;
+                }
+                @media only screen and (max-width: 573px) {
+                    font-size: 27px;
+                }
+                @media only screen and (max-width: 519px) {
+                    font-size: 25px;
+                }
+                @media only screen and (max-width: 457px) {
+                    font-size: 22px;
+                }
+                @media only screen and (max-width: 363px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .body{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 150px;
+            z-index: 100;
+
+            padding: 0px 204px;
+            @media only screen and (max-width: 1878px) {
+                padding: 0px 164px;
+            }
+            @media only screen and (max-width: 1798px) {
+                padding: 0px 84px;
+            }
+            @media only screen and (max-width: 1600px) {
+                padding: 0px 64px;
+            }
+            @media only screen and (max-width: 1498px) {
+                padding: 0px 44px;
+            }
+            @media only screen and (max-width: 1300px) {
+                margin-bottom: 100px;
+            }
+            @media only screen and (max-width: 970px) {
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+        }
+
+        .licenses_text{
+            margin-right: 86px;
+            @media only screen and (max-width: 970px) {
+                margin-right: 0px;
+            }
+            .option{
+                position: relative;
+                z-index: 10;
+                .option__title{
+                    margin-bottom: 30px;
+                    @media only screen and (max-width: 1300px) {
+                        margin-bottom: 10px;
+                    }
+                    @media only screen and (max-width: 625px) {
+                        margin-bottom: 0px;
+                    }
+                    h1{
+                        font-family: 'Vetrino';
+                        font-weight: 400;
+                        font-size: 50px;
+                        line-height: 54px;
+                        @media only screen and (max-width: 1600px) {
+                            font-size: 46px;
+                        }
+                        @media only screen and (max-width: 1498px) {
+                            font-size: 43px;
+                        }
+                        @media only screen and (max-width: 1221px) {
+                            font-size: 38px;
+                        }
+                        @media only screen and (max-width: 1061px) {
+                            font-size: 33px;
+                        }
+                        @media only screen and (max-width: 625px) {
+                            font-size: 30px;
+                        }
+                        @media only screen and (max-width: 573px) {
+                            font-size: 27px;
+                        }
+                        @media only screen and (max-width: 519px) {
+                            font-size: 25px;
+                        }
+                        @media only screen and (max-width: 457px) {
+                            font-size: 22px;
+                        }
+                        @media only screen and (max-width: 363px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .option__text{
+                    p{
+                        font-family: 'Gilroy';
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 28px;
+                        @media only screen and (max-width: 988px) {
+                            font-size: 20px;
+                        }
+                        @media only screen and (max-width: 457px) {
+                            font-size: 16px;
+                        }
+                        @media only screen and (max-width: 400px) {
+                            line-height: 20px;
+                        }
+                        @media only screen and (max-width: 363px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    a{
+                        color: red;
+                    }
+                }
+                .figure_green, .figure_blue, .figure_white, .figure_red{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 0px 100px 0px 0px;
+                    z-index: -1;
+                    position: absolute;
+
+                    @media only screen and (max-width: 970px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    @media only screen and (max-width: 768px) {
+                        width: 75px;
+                        height: 75px;
+                    }
+                    @media only screen and (max-width: 425px) {
+                        width: 50px;
+                        height: 50px;
+                        top: 25px;
+                    }
+                }
+                .figure_green{
+                    background-color: $figure_green;
+                }
+                .figure_blue{
+                    background-color: $figure_blue;
+                }
+                .figure_white{
+                    background-color: #fff;
+                }
+                .figure_red{
+                    background-color: $figure_red;
+                    margin-right: 0px;
+                }
+            }
+            .option:not(:last-child){
+                margin-bottom: 48px;
+                @media only screen and (max-width: 1124px) {
+                    margin-bottom: 30px;
+                }
+                @media only screen and (max-width: 625px) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .licenses_list{
+            display: flex;
+            align-items: center;
+
+            .list__item{
+                display: none;
+                cursor: pointer;
+                @media only screen and (max-width: 970px) {
+                    display: block;
+                    width: 220px;
+                }
+                @media only screen and (max-width: 728px) {
+                    display: none;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            .list__item.active{
+                width: 432px;
+                display: block;
+                @media only screen and (max-width: 1600px) {
+                    width: 380px;
+                }
+                @media only screen and (max-width: 970px) {
+                    width: 220px;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            .list__item:not(:last-child){
+                @media only screen and (max-width: 970px) {
+                    margin-right: 20px;
+                }
+            }
+            .list__item{
+                @media only screen and (max-width: 728px) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .licenses_nav{
+            .nav__right{
+                margin-left: 48px;
+                cursor: pointer;
+                @media only screen and (max-width: 1600px) {
+                    width: 30px;
+                }
+                @media only screen and (max-width: 1390px) {
+                    width: 25px;
+                }
+                @media only screen and (max-width: 1050px) {
+                    width: 20px;
+                }
+                @media only screen and (max-width: 970px) {
+                    display: none;
+                }
+                @media only screen and (max-width: 728px) {
+                    display: flex;
+                    width: 25px;
+                    margin: 0px;
+                }
+                @media only screen and (max-width: 375px) {
+                    width: 20px;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#magnify {
+    display: none;
+    /* position: absolute; upd: 24.10.2016 */
+    position: fixed;
+    max-width: 600px;
+    height: auto;
+    z-index: 9999;
+}
+  #magnify img {
+    width: 100%;
+}
+  /* затемняющий фон */
+  #overlay {
+    display: none;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 9990;
+    cursor: zoom-out;
+}

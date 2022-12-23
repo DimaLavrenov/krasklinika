@@ -1,0 +1,72 @@
+.modal-figures{
+    .modal__body{
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        
+        @media only screen and (max-width: 1339px){
+            grid-template-columns: 120px 120px 120px 120px 120px 120px;
+            grid-template-rows: 120px 120px 120px 120px;
+        }
+
+        @media only screen and (max-width: 990px){
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+        }
+
+        @media only screen and (max-width: 600px){
+            grid-template-columns: 80px 80px 80px 80px 80px 80px;
+            grid-template-rows: 80px 80px 80px 80px;
+        }
+
+        @media only screen and (max-width: 426px){
+            display: grid;
+        }
+
+        @media only screen and (max-width: 425px){
+            display: none;
+        }
+
+        .figure-green{
+            background-color: $figure-green;
+        }
+        .figure-green.bottom.left{
+            border-radius: 0px 0px 0px 150px;
+        }
+        .figure-green.bottom.right{
+            border-radius: 0px 0px 150px 0px;
+        }
+
+        .figure-red{
+            background-color: $figure-red;
+        }
+        .figure-red.bottom.left{
+            border-radius: 0px 0px 0px 150px;
+        }
+
+        .figure-blue{
+            background-color: $figure-blue;
+        }
+        .figure-blue.bottom.right{
+            border-radius: 0px 0px 150px 0px;
+        }
+        .figure-blue.top.left{
+            border-radius: 150px 0px 0px 0px;
+        }
+    }
+    .modal__body.w425{
+        @media only screen and (min-width: 426px){
+            display: none;
+        }
+        @media only screen and (max-width: 425px){
+            display: grid;
+            grid-template-columns: 60px 60px 60px 60px 60px;
+            grid-template-rows: 60px 60px 60px 60px 60px 60px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.questions-figures{
+    .questions__body{
+        display: grid;
+        grid-template-columns: 300px 300px 215px 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        .figure-green{
+            background-color: $figure-green;
+        }
+        .figure-green.top.right{
+            border-radius: 0px 300px 0px 0px;
+        }
+        .figure-green.bottom.left{
+            border-radius: 0px 0px 0px 300px;
+        }
+
+        .figure-white{
+            background-color: #fff;
+        }
+        .figure-white.top.right{
+            border-radius: 0px 300px 0px 0px;
+        }
+
+        .figure-red{
+            background-color: $figure-red;
+        }
+        .figure-red.bottom.right{
+            border-radius: 0px 0px 300px 0px;
+        }
+
+        .figure-blue{
+            background-color: $figure-blue;
+        }
+        .figure-blue.bottom.left{
+            border-radius: 0px 0px 0px 300px;
+        }
+    }
+}

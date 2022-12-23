@@ -1,0 +1,76 @@
+@import "./base";
+@import "./figures";
+@import "./header";
+@import "./offer";
+@import "./benefits";
+@import "./services";
+@import "./services-figures";
+@import "./doctors";
+@import "./doctors-figures";
+@import "./licenses";
+@import "./interblock";
+@import "./contact";
+@import "./contact-figures";
+@import "./arrows";
+@import "./footer";
+@import "./stock";
+@import "./menu";
+@import "./entry";
+
+@import "./description";
+@import "./questions";
+@import "./question-figures-1";
+@import "./_question-figures-2";
+@import "./_documentation";
+@import "./documentation-figures";
+@import "./modal-figures";
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+.endocrinology__page{
+    background-color: $figure-gray;
+}
+
+.benefits__screen{
+    position: relative;
+    z-index: 10;
+}
+
+.services__screen{
+    position: relative;
+}
+
+.doctors__screen{
+    position: relative;
+}
+
+.licenses__screen{
+    background-color: #F9F8F8;
+    position: relative;
+}
+
+.questions__screen{
+    position: relative;
+}
+
+.contact__screen{
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}

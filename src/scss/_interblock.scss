@@ -1,0 +1,236 @@
+.interblock__content{
+    background-color: $figure-red;
+    height: 293px;
+    @media only screen and (max-width: 1340px) {
+        height: auto;
+    }
+    .interblock__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px 204px 37px 204px;
+        @media only screen and (max-width: 1878px) {
+            padding: 13px 164px 37px 164px;
+        }
+        @media only screen and (max-width: 1798px) {
+            padding: 13px 84px 37px 84px;
+        }
+        @media only screen and (max-width: 1600px) {
+            padding: 13px 64px 37px 64px;
+        }
+        @media only screen and (max-width: 1498px) {
+            padding: 13px 44px 37px 44px;
+        }
+        @media only screen and (max-width: 1221px) {
+            padding: 30px 34px 30px 34px;
+        }
+        @media only screen and (max-width: 1130px) {
+            padding: 30px 20px 30px 20px;
+        }
+        @media only screen and (max-width: 1061px) {
+            padding: 30px 20px 30px 20px;
+        }
+        @media only screen and (max-width: 728px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        @media only screen and (max-width: 457px) {
+            padding: 30px 10px 30px 10px;
+        }
+        .container__text{
+            @media only screen and (max-width: 956px) {
+                margin-right: 30px;
+            }
+            @media only screen and (max-width: 728px) {
+                margin-right: 0px;
+            }
+            .text__title{
+                margin-bottom: 30px;
+                @media only screen and (max-width: 956px) {
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-family: 'Vetrino';
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 54px;
+                    @media only screen and (max-width: 1600px) {
+                        font-size: 46px;
+                    }
+                    @media only screen and (max-width: 1498px) {
+                        font-size: 43px;
+                    }
+                    @media only screen and (max-width: 1221px) {
+                        font-size: 38px;
+                    }
+                    @media only screen and (max-width: 1061px) {
+                        font-size: 33px;
+                    }
+                    @media only screen and (max-width: 837px) {
+                        line-height: 37px;
+                    }
+                    @media only screen and (max-width: 625px) {
+                        font-size: 30px;
+                    }
+                    @media only screen and (max-width: 573px) {
+                        font-size: 27px;
+                    }
+                    @media only screen and (max-width: 519px) {
+                        font-size: 25px;
+                    }
+                    @media only screen and (max-width: 457px) {
+                        font-size: 22px;
+                    }
+                    @media only screen and (max-width: 363px) {
+                        font-size: 20px;
+                    }
+                    @media only screen and (max-width: 327px) {
+                        line-height: 25px;
+                    }
+                }
+            }
+            .text__paragraph{
+                width: 993px;
+                @media only screen and (max-width: 1340px) {
+                    width: auto;
+                }
+                p{
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 28px;
+                    @media only screen and (max-width: 988px) {
+                        font-size: 17px;
+                    }
+                    @media only screen and (max-width: 457px) {
+                        font-size: 15px;
+                    }
+                    @media only screen and (max-width: $breakpoint-mobile-l) {
+                        line-height: 20px;
+                    }
+                    @media only screen and (max-width: 363px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .container__forms{
+            @media only screen and (max-width: 728px) {
+                margin-top: 20px;
+            }
+            .name{
+                margin-bottom: 9px;
+                @media only screen and (max-width: 728px) {
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+                @media only screen and (max-width: 519px) {
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: rgba(0, 0, 0, 0.7);
+                    @media only screen and (max-width: 400px) {
+                        font-size: 12px;
+                    }
+                }
+                input[type="text"]{
+                    width: 260px;
+                    height: 50px;
+                    background: #E5EBFA;
+                    border: 1px solid #4871D6;
+                    border-radius: 3px;
+                    padding: 12px 0px 13px 24px;
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: rgba(0, 0, 0, 0.5);
+                    @media only screen and (max-width: 573px) {
+                        width: 240px;
+                        height: 40px;
+                    }
+                    @media only screen and (max-width: 400px) {
+                        width: 160px;
+                        height: 30px;
+                        font-size: 13px;
+                        padding: 12px 0px 13px 10px;
+                    }
+                }
+            }
+            .number{
+                @media only screen and (max-width: 728px) {
+                    text-align: left;
+                }
+                p{
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: rgba(0, 0, 0, 0.7);
+                    @media only screen and (max-width: 400px) {
+                        font-size: 12px;
+                    }
+                }
+                input[type="number"]{
+                    width: 260px;
+                    height: 50px;
+                    background: #E5EBFA;
+                    border: 1px solid #4871D6;
+                    border-radius: 3px;
+                    padding: 12px 0px 13px 24px;
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: rgba(0, 0, 0, 0.5);
+                    @media only screen and (max-width: 573px) {
+                        width: 240px;
+                        height: 40px;
+                    }
+                    @media only screen and (max-width: 400px) {
+                        width: 160px;
+                        height: 30px;
+                        font-size: 13px;
+                        padding: 12px 0px 13px 10px;
+                    }
+                }
+            }
+            button{
+                margin-top: 34px;
+                width: 260px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #C1D1F8;
+                border: 2px solid #4871D6;
+                border-radius: 3px;
+                font-family: 'Gilroy';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                transition: .3s linear;
+                cursor: pointer;
+                @media only screen and (max-width: 573px) {
+                    width: 240px;
+                    height: 40px;
+                }
+                @media only screen and (max-width: 400px) {
+                    width: 160px;
+                    height: 30px;
+                    font-size: 13px;
+                    margin-top: 25px;
+                }
+            }
+            button:hover{
+                background-color: darken($primary-color, 5%);
+                transition: .3s linear;
+            }
+        }
+    }
+}

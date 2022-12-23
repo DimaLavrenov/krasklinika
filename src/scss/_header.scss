@@ -1,0 +1,199 @@
+.header{
+    background-color: $primary-color;
+}
+
+.header__content{
+    padding: 0px 204px;
+
+    @media only screen and (max-width: 1878px) {
+        padding: 0px 164px;
+    }
+    @media only screen and (max-width: 1798px) {
+        padding: 0px 84px;
+    }
+    @media only screen and (max-width: 1395px) {
+        padding: 0px 44px;
+    }
+    @media only screen and (max-width: 1310px) {
+        padding: 0px 34px;
+    }
+    @media only screen and (max-width: 1130px) {
+        padding: 0px 20px;
+    }
+    @media only screen and (max-width: 625px) {
+        padding: 10px 20px;
+    }
+    @media only screen and (max-width: 548px) {
+        padding: 10px 40px;
+    }
+    @media only screen and (max-width: 363px) {
+        padding: 10px 20px;
+    }
+}
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    @media only screen and (max-width: 625px) {
+        height: auto;
+    }
+
+    .menu_icon{
+        img{
+            @media only screen and (max-width: 1310px) {
+                width: 210px;
+            }
+            @media only screen and (max-width: 1130px) {
+                width: 190px;
+            }
+            @media only screen and (max-width: 625px) {
+                width: 160px;
+            }
+            @media only screen and (max-width: 573px) {
+                width: 170px;
+            }
+            @media only screen and (max-width: 548px) {
+                width: 190px;
+            }
+        }
+    }
+}
+
+.menu_body{
+    @media only screen and (max-width: 950px) {
+        display: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Gilroy';
+            transition: .3s linear;
+        }
+        a:hover{
+            color: lighten(black, 40%);
+            transition: .3s linear;
+        }
+        li:not(:last-child){
+            margin-right: 74px;
+            @media only screen and (max-width: $breakpoint-note) {
+                margin-right: 56px;
+            }
+            @media only screen and (max-width: 1310px) {
+                margin-right: 40px;
+            }
+            @media only screen and (max-width: 1130px) {
+                margin-right: 22px;
+            }
+            @media only screen and (max-width: 988px) {
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
+.menu_contact{
+    display: flex;
+    align-items: center;
+    .menu_number{
+        margin-right: 25px;
+        font-family: 'Gilroy';
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 1310px) {
+            margin-right: 18px;
+        }
+        @media only screen and (max-width: 1130px) {
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 950px) {
+            margin-right: 19px;
+        }
+        @media only screen and (max-width: 625px) {
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 573px) {
+            margin-right: 13px;
+        }
+        @media only screen and (max-width: 548px) {
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            @media only screen and (max-width: 625px) {
+                font-size: 15px;
+            }
+            @media only screen and (max-width: 573px) {
+                font-size: 15px;
+            }
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+    .menu_burger{
+        display: none;
+        @media only screen and (max-width: 950px) {
+            display: block;
+            margin-left: 35px;
+        }
+        @media only screen and (max-width: 625px) {
+            margin-left: 25px;
+        }
+        @media only screen and (max-width: 573px) {
+            margin-left: 20px;
+        }
+        img{
+            @media only screen and (max-width: 573px) {
+                width: 30px;
+            }
+            @media only screen and (max-width: 548px) {
+                width: 33px;
+            }
+        }
+    }
+}
+
+.menu_contact .menu_button{
+    @media only screen and (max-width: 548px) {
+        display: none;
+    }
+    button{
+        border: 2px solid #fff;
+        background-color: rgba(#fff , .5);
+        padding: 12px 22px 13px 23px;
+        cursor: pointer;
+        font-family: 'Gilroy';
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 3px;
+        transition: .3s linear;
+        @media only screen and (max-width: 1310px) {
+            padding: 8px 13px;
+        }
+        @media only screen and (max-width: 1130px) {
+            font-size: 16px;
+            padding: 6px 8px;
+        }
+        @media only screen and (max-width: 625px) {
+            font-size: 14px;
+            padding: 5px 6px;
+        }
+        @media only screen and (max-width: 573px) {
+            font-size: 13px;
+            padding: 5px 15px;
+        }
+    }
+    button:hover{
+        background-color: darken(#fff, 5%);
+        transition: .3s linear;
+    }
+}

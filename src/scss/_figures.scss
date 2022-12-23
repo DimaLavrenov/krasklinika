@@ -1,0 +1,175 @@
+.grid{
+    height: 980px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.grid__body{
+    display: grid;
+    grid-template-columns: 300px 216px 300px 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    position: absolute;
+    bottom: -112px;
+    left: 0px;
+    z-index: -1;
+
+    @media only screen and (max-width: 1600px){
+        grid-template-columns: 300px 36px 300px 300px 300px 300px 300px;
+        grid-template-rows: 300px 250px 300px 300px;
+        bottom: -62px;
+    }
+    @media only screen and (max-width: 1498px){
+        grid-template-columns: 250px 204px 250px 250px 250px 250px 250px;
+        grid-template-rows: 250px 247px 250px 250px;
+        bottom: 40px;
+    }
+    @media only screen and (max-width: 1358px){
+        grid-template-columns: 250px 64px 250px 250px 250px 250px 250px;
+        grid-template-rows: 250px 198px 250px 250px;
+        bottom: 89px;
+    }
+    @media only screen and (max-width: 1221px){
+        grid-template-columns: 210px 136px 210px 210px 210px 210px 210px;
+        grid-template-rows: 210px 188px 210px 210px;
+        bottom: 196px;
+    }
+    @media only screen and (max-width: 1061px){
+        grid-template-rows: 210px 158px 210px 210px;
+        bottom: 242px;
+    }
+    @media only screen and (max-width: 989px){
+        display: grid;
+    }
+    @media only screen and (max-width: 988px){
+        display: none;
+    }
+}
+.grid__body.w988{
+    @media only screen and (min-width: 989px){
+        display: none;
+    }
+    @media only screen and (max-width: 988px){
+        display: grid;
+        bottom: -180px;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    }
+    @media only screen and (max-width: 900px){
+        left: -83px;
+    }
+    @media only screen and (max-width: 625px){
+        left: -35px;
+        bottom: 60px;
+        grid-template-columns: 150px 150px 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    }
+    @media only screen and (max-width: 573px){
+        left: -57px;
+        bottom: 116px;
+    }
+    @media only screen and (max-width: 519px){
+        left: -111px;
+        bottom: 144px;
+    }
+    @media only screen and (max-width: 457px){
+        grid-template-columns: 105px 105px 105px 105px 105px;
+        grid-template-rows: 105px 105px 105px 105px 105px 105px;
+        left: 6px;
+        bottom: 337px;
+    }
+    @media only screen and (max-width: 425px){
+        display: none;
+    }
+}
+.grid__body.w425{
+    @media only screen and (min-width: 426px){
+        display: none;
+    }
+    @media only screen and (max-width: 425px){
+        display: grid;
+        top: 22px;
+        left: -5px;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    }
+    @media only screen and (max-width: 408px){
+        left: -12px;
+        grid-template-rows: 100px 100px 100px 100px 50px 100px 100px;
+    }
+    @media only screen and (max-width: 363px){
+        left: -47px;
+        grid-template-rows: 100px 100px 100px 100px 7px 100px 100px;
+        top: 8px;
+    }
+}
+
+.figure-red{
+    background-color: $figure-red;
+}
+.figure-red.right{
+    border-radius: 0px 0px 250px 0px;
+}
+.figure-red.left{
+    border-radius: 250px 0px 0px 0px;
+}
+.figure-red.right.top{
+    border-radius: 0px 250px 0px 0px;
+}
+
+.figure-transparent{
+    background-color: transparent;
+}
+.figure-transparent, .x215{
+    border-radius: 215px 0px 0px 0px;
+}
+
+.figure-green{
+    background-color: $figure-green;
+}
+.figure-green.left.top{
+    border-radius: 250px 0px 0px 0px;
+}
+.figure-green.right.top{
+    border-radius: 0px 250px 0px 0px;
+}
+.figure-green.left.bottom{
+    border-radius: 0px 0px 0px 250px;
+}
+.figure-green.right.bottom{
+    border-radius: 0px 0px 250px 0px;
+}
+
+.figure-blue{
+    background-color: $figure-blue;
+}
+.figure-blue.right.bottom{
+    border-radius: 0px 0px 250px 0px;
+}
+.figure-blue.right.top{
+    border-radius: 0px 250px 0px 0px;
+}
+
+.figure-gray{
+    background-color: $figure-gray;
+}
+.figure-gray.left.bottom{
+    border-radius: 0px 0px 0px 250px;
+}
+.figure-gray.left.top{
+    border-radius: 250px 0px 0px 0px;
+}
+.figure-gray.right.top{
+    border-radius: 0px 250px 0px 0px;
+}
+
+.figure-circle{
+    padding-left: 55px;
+    padding-top: 145px;
+    .circle{
+        width: 76px;
+        height: 76px;
+        background-color: $primary-color;
+        border-radius: 50%;
+    }
+}
