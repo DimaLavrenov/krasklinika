@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Краевой лечебно-диагностический центр 'Красклиник' на Авиаторов"
+})
+    <body>
+
+        <div class="page">
+
+            @@include('html/header.html', {})
+            @@include('html/partials/entry-modal.html', {})
+
+            <main class="main">
+                @@include('html/partials/menu.html')
+                
+                <div class="offer__screen">
+                    @@include('html/figures.html')
+                    @@include('html/offer.html')
+                </div>
+
+                <div class="benefits__screen">
+                    @@include('html/benefits.html')
+                </div>
+
+                <a id="services"></a>
+                <div class="services__screen">
+                    @@include('html/services-figures.html')
+                    @@include('html/services.html')
+                </div>
+
+                <div class="stock__screen">
+                    @@include('html/stock.html')
+                </div>
+
+                <div class="doctors__screen">
+                    @@include('html/doctors-figures.html')
+                    @@include('html/doctors.html')
+                </div>
+
+                <div class="licenses__screen">
+                    @@include('html/licenses.html')
+                </div>
+
+                @@include('html/interblock.html')
+
+                <div class="contact__screen">
+                    @@include('html/contact-figures.html')
+                    @@include('html/contact.html')
+                </div>
+
+                <div class="arrows__screen">
+                    @@include('html/arrows.html')
+                </div>
+                
+            </main>
+
+            @@include('html/footer.html')
+
+        </div>
+
+        <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-1.11.2.js "></script>
+        <!-- <script src="./js/anime.min.js"></script> -->
+        <script src="js/app.min.js"></script>
+        <!-- <script src="./js/app.js"></script> -->
+    </body>
+</html>

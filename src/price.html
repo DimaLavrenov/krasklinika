@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Цены" })
+
+<body class="endocrinology__page">
+    <div class="page">
+        @@include('html/partials/menu.html')
+        @@include('html/header.html')
+        @@include('html/partials/entry-modal.html', {})
+
+        <main class="main">
+            <div class="questions__screen">
+                @@include('html/documentation-figures.html')
+                @@include('html/price.html')
+            </div>
+
+            <div class="interblock__screen">
+                @@include('html/interblock.html')
+            </div>
+
+            <div class="arrows__screen">
+                @@include('html/arrows.html')
+            </div>
+        </main>
+
+        @@include('html/footer.html')
+    </div>
+
+    <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
